@@ -5,6 +5,7 @@
         static void Main(string[] args)
         {
             bool close = false;
+            string? input;
 
             while (!close)
             {
@@ -13,11 +14,13 @@
                 Console.WriteLine("Input correct number for translatino direction:\n" +
                     "1: Translate to pirate language\n" +
                     "2: Translate from pirate language\n" +
-                    "3: Exit program"); 
+                    "3: Exit program");
 
-                int input = int.Parse(Console.ReadLine());
+                input = Console.ReadLine();
 
-                switch (input)
+                if (!int.TryParse(input, out int command)) { continue; }
+
+                switch (command)
                 {
                     case 1: TranslateTo.Run(); break;
 
