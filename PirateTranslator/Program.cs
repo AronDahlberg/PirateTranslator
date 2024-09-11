@@ -11,7 +11,7 @@
             {
                 Console.Clear();
 
-                Console.WriteLine("Input correct number for translation direction mmmmm:\n" +
+                Console.WriteLine("Input correct number for translation direction mmmm:\n" +
                     "1: Translate to pirate language\n" +
                     "2: Translate from pirate language\n" +
                     "3: Exit program");
