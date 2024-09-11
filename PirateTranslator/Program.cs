@@ -18,7 +18,7 @@
 
                 input = Console.ReadLine();
 
-                if (!int.TryParse(input, out int command)) { continue; }
+                int.TryParse(input, out int command);
 
                 switch (command)
                 {
