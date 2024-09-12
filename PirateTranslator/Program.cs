@@ -18,15 +18,13 @@
 
                 input = Console.ReadLine();
 
-                int.TryParse(input, out int command);
-
-                switch (command)
+                switch (input)
                 {
-                    case 1: TranslateTo.Run(); break;
+                    case "1": TranslateTo.Run(); break;
 
-                    case 2: TranslateFrom.Run(); break;
+                    case "2": TranslateFrom.Run(); break;
 
-                    case 3: close = true;  break;
+                    case "3": close = true;  break;
                 }
             }
 
